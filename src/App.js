@@ -1,10 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/navbar';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes,useLocation,useNavigate } from 'react-router-dom';
 import Home from './components/home';
 import About from './components/about';
 import Projects from './components/projects';
+import { useEffect } from 'react';
 function App() {
   const location=useLocation();
   const navigateTo=useNavigate();

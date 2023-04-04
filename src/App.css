@@ -2,42 +2,76 @@
     display: flex;
     justify-content: start;
 }
+
 * {
-    color:white !important;
+    color: white !important;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+
 }
-#myname{
-    color:#00B2DF !important;
-    
+
+#myname {
+    color: #00B2DF !important;
+
 }
-body{
+
+body {
     background-color: #191923 !important;
 }
-.nav-item{
-    margin:0 25px;
-    
+
+.project {
+    border: 1px white solid;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 5px;
 }
-.nav-link:hover{
+
+button.rec-arrow-right,
+button.rec-arrow-left {
+    margin: 0 6px;
+}
+
+button.rec-arrow-right:hover,
+button.rec-arrow-left:hover {
+    background-color: #00B2DF !important;
+}
+
+.rec-dot {
+    background-color: white !important;
+}
+
+.rec-dot_active {
+    background-color: #00B2DF !important;
+}
+
+.nav-item {
+    margin: 0 25px;
+
+}
+
+.nav-link:hover {
     border-bottom: 1px solid #00B2DF;
 }
 
-.navbar-nav{
+.navbar-nav {
     display: flex !important;
     justify-content: center;
-    animation:navbar-nav 1000ms ease-in-out 0s 1 normal none running;
+    animation: navbar-nav 1000ms ease-in-out 0s 1 normal none running;
 }
-.active{
-    color:#00B2DF !important;
+
+.active {
+    color: #00B2DF !important;
 }
+
 @keyframes navbar-nav {
-    0%{
+    0% {
         transform: translateY(-50%);
     }
-    100%{
+
+    100% {
         transform: translateY(0);
     }
 }
+
 .aboutme {
     box-shadow: 18px 14px 69px 6px #00B2DF !important;
     border-radius: 15px;
@@ -52,7 +86,7 @@ body{
 .aboutmeimg>img {
     border-radius: 20px;
     border: 2px solid rgb(208, 208, 208);
-    box-shadow: 18px 14px 69px 6px rgba(243,81,130,1);
+    box-shadow: 18px 14px 69px 6px rgba(243, 81, 130, 1);
     margin-top: 5%;
     position: relative;
     animation: float 3s ease-in-out infinite;
@@ -81,7 +115,8 @@ body{
     display: flex;
     justify-content: start;
 }
-.desc>div>img{
+
+.desc>div>img {
     animation: float 3s ease-in-out infinite;
     box-shadow: 18px -3px 69px 6px rgb(247, 247, 247);
     border-radius: 5px;
@@ -104,14 +139,14 @@ body{
 
 
 .desc h2 {
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
 
 .homeimage>img {
     border-radius: 50%;
-    box-shadow: 7px 33px 92px 28px rgba(0,178,223,0.69);
+    box-shadow: 7px 33px 92px 28px rgba(0, 178, 223, 0.69);
     margin-top: 10%;
 }
 
@@ -146,7 +181,7 @@ body{
 
 
 /* Next Btn */
-.cta {
+.cta,.ctaabout {
     /* display: flex; */
     position: absolute;
     margin: 0 5%;
@@ -278,3 +313,42 @@ body{
         transform: translateX(0px);
     }
 }
+.skills{
+    display: flex;
+    justify-content: start;
+}
+
+
+
+.navbar-toggler-icon{
+    color: #00B2DF !important;
+    background-color: #00B2DF !important;
+}
+@media only screen and (max-width:768px) {
+    .skills{
+        display: block !important;
+    }
+    .aboutme{
+       display: block;
+       margin:0 3%;
+    }
+    .aboutmeimg{
+        margin:10% 0 !important;
+    }
+    .ctaabout{
+        margin:0 25% !important;
+    }
+    .cta{
+        margin:2% 25% !important;
+    }
+    .aboutmedesc{
+        display: block;
+        width: 100%;
+    }
+    .rec-arrow{
+        display: none;
+    }
+    .rec-dot{
+        padding: 25px !important;
+    }
+  }

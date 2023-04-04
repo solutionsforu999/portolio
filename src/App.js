@@ -6,6 +6,13 @@ import Home from './components/home';
 import About from './components/about';
 import Projects from './components/projects';
 function App() {
+  const location=useLocation();
+  const navigateTo=useNavigate();
+  useEffect(()=>{
+    if(location.pathname==='/'){
+      navigateTo('/home');
+    }
+  },[location]);
   return (
     <>
     <Navbar/>

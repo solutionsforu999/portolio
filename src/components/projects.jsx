@@ -2,6 +2,9 @@ import { useRef } from "react";
 import Carousel from "react-elastic-carousel";
 import { useNavigate } from "react-router-dom";
 import marketplace from '../images&gifs/marketplace.JPG';
+import processing from '../images&gifs/processing.gif';
+import imdb from '../images&gifs/imdb.png';
+import { Link } from "react-router-dom";
 const breakPoints = [
     { width: 1, itemsToShow: 1 },
     { width: 550, itemsToShow: 2, itemsToScroll: 2, pagination: false },
@@ -29,25 +32,28 @@ const Projects = () => {
     return (
         <>
             <Carousel ref={carousel} itemPosition={3} onPrevStart={onPrevStart} itemsToShow={1} onNextStart={onNextStart} enableMouseSwipe disableArrowsOnEnd={false}>
-                <div>
-                    <div>
-                        <img src={marketplace} alt={marketplace} width='50%' />
+                <div className="project">
+                        <img className="m-auto w-100" onClick={()=>window.open(('https://ourmovies.vercel.app/'))} src={imdb} class="card-img-top" alt="imdb" />
+                        
+                </div>
+                <div className="project">
+                    {/* <div>
+                         <img src={marketplace} alt={marketplace} width='50%' /> 
                     </div>
                     <div><h2>Ecom local Project</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia minus eius nam veniam soluta expedita. Omnis doloribus fugiat excepturi eum dolor deserunt. Quos et nulla eligendi quas facilis, adipisci odio ducimus, in beatae doloremque eveniet. Minus, eligendi nulla fugit ratione esse, numquam mollitia quae aliquid, commodi assumenda in quidem aspernatur.</p>
-                    </div>
+                    </div> */}
+                    <img className="m-auto w-100" src={processing} width="150px" alt='processing' />
+                    <p>Ecom Project Processing...</p>
                 </div>
-                <div>
-                    <div>
 
-                    </div>
-                    <div><h2>Dummy STORE</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia minus eius nam veniam soluta expedita. Omnis doloribus fugiat excepturi eum dolor deserunt. Quos et nulla eligendi quas facilis, adipisci odio ducimus, in beatae doloremque eveniet. Minus, eligendi nulla fugit ratione esse, numquam mollitia quae aliquid, commodi assumenda in quidem aspernatur.</p>
-                    </div>
-                </div>
-                <div>
+                <div className="project">
+                    {/* <div></div>
                     <h2>Movies App</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia minus eius nam veniam soluta expedita. Omnis doloribus fugiat excepturi eum dolor deserunt. Quos et nulla eligendi quas facilis, adipisci odio ducimus, in beatae doloremque eveniet. Minus, eligendi nulla fugit ratione esse, numquam mollitia quae aliquid, commodi assumenda in quidem aspernatur.</p>
+                 */}
+                    <img className="m-auto w-100" src={processing} width="150px" alt='processing' />
+                    <p>Ecom Local Project Processing...</p>
                 </div>
             </Carousel>
 

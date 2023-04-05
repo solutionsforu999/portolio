@@ -33,7 +33,8 @@ const Home = () => {
                     <h2 id='myname'>I'm Abdellatif BENCHADA</h2>
                     <h2>{role}</h2>
                     <div>
-                        <img src={linkedin} width='20%' alt={linkedin}/>
+                        <img src={linkedin} onClick={()=>navigateTo('https://www.linkedin.com/in/abdellatif-benchada-370085260/')} width='20%' alt={linkedin}/>
+
                     </div>
                 </div>
                 <div className='homeimage col-md-6'>

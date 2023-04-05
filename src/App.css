@@ -18,16 +18,50 @@ body {
     background-color: #191923 !important;
 }
 
-.project {
+/* .project {
     border: 1px white solid;
     border-radius: 5px;
     padding: 8px;
     margin: 5px;
-}
+    
+} */
 
+.project {
+    
+    border: 1px white solid;
+    border-radius: 5px;
+    padding: 8px;
+    margin:8px auto;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(241, 241, 241, 0.908);
+    position: relative;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .project:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    opacity: 0;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform, opacity;
+    transition-property: transform, opacity;
+  }
+  .project:hover, .project:focus, .project:active {
+    transform: translateY(5px);
+    box-shadow: 0 0 10px rgba(241, 241, 241, 0.908);
+  }
 button.rec-arrow-right,
 button.rec-arrow-left {
     margin: 0 6px;
+    
 }
 
 button.rec-arrow-right:hover,

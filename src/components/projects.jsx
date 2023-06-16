@@ -35,19 +35,19 @@ const Projects = () => {
                 <div class="bg-dark project">
                     <img style={{cursor:"pointer", width:"250px"}}  onClick={() => window.open(('https://ourmovies.vercel.app/'))} src={imdb} class="card-img-top" alt="movies_db" />
                     <div class="card-body">
-                        <p class="card-text">Movies DB..</p>
+                        <p class="card-text my-1">Movies DB..</p>
                     </div>
                 </div>
                 <div class="bg-dark project">
                     <img style={{cursor:"pointer", width:"250px"}} src={processing} class="card-img-top" width='250px' alt="ecom_proj" />
                     <div class="card-body">
-                        <p class="card-text">Ecom Project Processing...</p>
+                        <p class="card-text text-center my-1">Ecom Project Processing...</p>
                     </div>
                 </div>
                 <div class="bg-dark project">
-                    <img style={{cursor:"pointer", width:"250px"}} src={processing} class="card-img-top" width='250px' alt="ecom_db" />
+                    <img style={{cursor:"pointer",margin:'auto', width:"250px"}} src={processing} class="card-img-top" width='250px' alt="ecom_db" />
                     <div class="card-body">
-                        <p class="card-text">Ecom Project Processing...</p>
+                        <p class="card-text text-center my-1">Second Ecom Project iscoming.</p>
                     </div>
                 </div>
             </Carousel>

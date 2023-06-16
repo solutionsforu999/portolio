@@ -253,7 +253,6 @@ button.rec-arrow-left:hover {
 .spanbtx {
     transform: skewX(15deg);
     font-family: 'Ubuntu';
-    font-weight: bold;
 }
 
 .second {

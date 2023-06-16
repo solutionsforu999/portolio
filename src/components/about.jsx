@@ -39,7 +39,7 @@ const About = () => {
                 <div className='aboutmeimg'>
                     <img src={illustrator} width='100%' alt={illustrator} />
                 </div>
-                <button style={{ margin: '35% 24% 30% 20%' }} className="ctaabout" onClick={() => navigateTo('/projects')}>
+                <button style={{ margin: '35% 24% 30% 20%' }} className="cta" onClick={() => navigateTo('/projects')}>
                     <span className="spanbtx">NEXT{' >'}</span>
                 </button>
             </div>

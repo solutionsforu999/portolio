@@ -92,6 +92,7 @@ button.rec-arrow-left:hover {
 
 .active {
     color: #00B2DF !important;
+    border-bottom: 1px solid #00B2DF;
 }
 
 @keyframes navbar-nav {

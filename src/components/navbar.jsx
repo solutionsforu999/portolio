@@ -1,8 +1,8 @@
-import {NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logo from '../images&gifs/logo.png';
 const Navbar = () => {
     return (
-        <nav className="navbar bg-dark border-bottom border-bottom-dark"  data-bs-theme="dark">
+        <nav className="navbar navbar-expand-lg">
             <div className="container-fluid">
                 <NavLink className="navbar-brand" >
                     <img src={logo} alt={logo} width='150px'/>

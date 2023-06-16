@@ -2,6 +2,9 @@ import { useRef } from "react";
 import Carousel from "react-elastic-carousel";
 import { useNavigate } from "react-router-dom";
 import marketplace from '../images&gifs/marketplace.JPG';
+import processing from '../images&gifs/processing.gif';
+import imdb from '../images&gifs/imdb.png';
+import { Link } from "react-router-dom";
 const breakPoints = [
     { width: 1, itemsToShow: 1 },
     { width: 550, itemsToShow: 2, itemsToScroll: 2, pagination: false },
@@ -21,7 +24,6 @@ const Projects = () => {
     const onNextStart = (current, next) => {
         console.log('next==>', current, next)
         if (current.index === next.index) {
-            // console.log('last',carousel.current.props.children.length)
             carousel.current.goTo(0);
         }
         return
@@ -29,25 +31,24 @@ const Projects = () => {
     return (
         <>
             <Carousel ref={carousel} itemPosition={3} onPrevStart={onPrevStart} itemsToShow={1} onNextStart={onNextStart} enableMouseSwipe disableArrowsOnEnd={false}>
-                <div>
-                    <div>
-                        <img src={marketplace} alt={marketplace} width='50%' />
-                    </div>
-                    <div><h2>Ecom local Project</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia minus eius nam veniam soluta expedita. Omnis doloribus fugiat excepturi eum dolor deserunt. Quos et nulla eligendi quas facilis, adipisci odio ducimus, in beatae doloremque eveniet. Minus, eligendi nulla fugit ratione esse, numquam mollitia quae aliquid, commodi assumenda in quidem aspernatur.</p>
-                    </div>
-                </div>
-                <div>
-                    <div>
-
-                    </div>
-                    <div><h2>Dummy STORE</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia minus eius nam veniam soluta expedita. Omnis doloribus fugiat excepturi eum dolor deserunt. Quos et nulla eligendi quas facilis, adipisci odio ducimus, in beatae doloremque eveniet. Minus, eligendi nulla fugit ratione esse, numquam mollitia quae aliquid, commodi assumenda in quidem aspernatur.</p>
+                
+                <div class="bg-dark project">
+                    <img style={{cursor:"pointer"}}  onClick={() => window.open(('https://ourmovies.vercel.app/'))} src={imdb} class="card-img-top" width='250px' alt="movies_db" />
+                    <div class="card-body">
+                        <p class="card-text">Movies DB..</p>
                     </div>
                 </div>
-                <div>
-                    <h2>Movies App</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia minus eius nam veniam soluta expedita. Omnis doloribus fugiat excepturi eum dolor deserunt. Quos et nulla eligendi quas facilis, adipisci odio ducimus, in beatae doloremque eveniet. Minus, eligendi nulla fugit ratione esse, numquam mollitia quae aliquid, commodi assumenda in quidem aspernatur.</p>
+                <div class="bg-dark project">
+                    <img style={{cursor:"pointer"}} src={processing} class="card-img-top" width='250px' alt="movies_db" />
+                    <div class="card-body">
+                        <p class="card-text">Ecom Project Processing...</p>
+                    </div>
+                </div>
+                <div class="bg-dark project">
+                    <img style={{cursor:"pointer"}} src={processing} class="card-img-top" width='250px' alt="movies_db" />
+                    <div class="card-body">
+                        <p class="card-text">Ecom Project Processing...</p>
+                    </div>
                 </div>
             </Carousel>
 

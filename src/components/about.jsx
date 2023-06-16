@@ -22,7 +22,7 @@ const About = () => {
 
                         </div>
                     </div>
-                    <div className='skills container'>
+                    <div className='skills'>
                         <ul>
                             <li>Reactjs</li>
                             <li>Laravel</li>

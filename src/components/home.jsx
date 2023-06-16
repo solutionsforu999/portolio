@@ -34,6 +34,7 @@ const Home = () => {
                     <h2>{role}</h2>
                     <div>
                         <img style={{cursor:'pointer'}} src={linkedin} onClick={()=>window.open('https://www.linkedin.com/in/abdellatif-benchada-370085260/')} width='20%' alt={linkedin}/>
+
                     </div>
                 </div>
                 <div className='homeimage col-md-6'>

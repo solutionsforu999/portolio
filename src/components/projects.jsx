@@ -33,19 +33,19 @@ const Projects = () => {
             <Carousel ref={carousel} itemPosition={3} onPrevStart={onPrevStart} itemsToShow={1} onNextStart={onNextStart} enableMouseSwipe disableArrowsOnEnd={false}>
                 
                 <div class="bg-dark project">
-                    <img style={{cursor:"pointer"}}  onClick={() => window.open(('https://ourmovies.vercel.app/'))} src={imdb} class="card-img-top" width='250px' alt="movies_db" />
+                    <img style={{cursor:"pointer", width:"250px"}}  onClick={() => window.open(('https://ourmovies.vercel.app/'))} src={imdb} class="card-img-top" alt="movies_db" />
                     <div class="card-body">
                         <p class="card-text">Movies DB..</p>
                     </div>
                 </div>
                 <div class="bg-dark project">
-                    <img style={{cursor:"pointer"}} src={processing} class="card-img-top" width='250px' alt="movies_db" />
+                    <img style={{cursor:"pointer", width:"250px"}} src={processing} class="card-img-top" width='250px' alt="ecom_proj" />
                     <div class="card-body">
                         <p class="card-text">Ecom Project Processing...</p>
                     </div>
                 </div>
                 <div class="bg-dark project">
-                    <img style={{cursor:"pointer"}} src={processing} class="card-img-top" width='250px' alt="movies_db" />
+                    <img style={{cursor:"pointer", width:"250px"}} src={processing} class="card-img-top" width='250px' alt="ecom_db" />
                     <div class="card-body">
                         <p class="card-text">Ecom Project Processing...</p>
                     </div>
